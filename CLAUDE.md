@@ -1,3 +1,4 @@
-# CLAUDE.md
-
-All agent guidance for this repo lives in [`AGENTS.md`](./AGENTS.md). Load it before doing anything else; it is the single source of truth for architecture, skills, security, build gates, and verification.
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+<!-- SPECKIT END -->
