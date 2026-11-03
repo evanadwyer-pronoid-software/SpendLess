@@ -17,7 +17,7 @@ PRISM 0.6.3, installed 2026-10-31 by Claude Code into `SpendLess` (module `:app`
 
 **PRISM's (leave alone):** `.prism/` (engine, assets, templates, adapters, docs, `prism.json`, this record).
 
-**KEPT (existing file wins):** `.claude/agents/mutation-worker.md`. PRISM's copy is beside it as `mutation-worker.md.prism-new`.
+**ADOPTED (replaced existing):** `.claude/agents/mutation-worker.md` is now PRISM's copy; the previous project-local version was removed.
 
 ## 2. Parameters
 
