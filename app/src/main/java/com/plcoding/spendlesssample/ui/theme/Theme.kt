@@ -5,9 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 
 @Composable
-fun SpendLessSampleTheme(
-    content: @Composable () -> Unit,
-) {
+fun SpendLessSampleTheme(content: @Composable () -> Unit) {
     CompositionLocalProvider(
         LocalSpendLessExtraColors provides SpendLessLightExtraColors,
         LocalBodyXSmall provides BodyXSmall,

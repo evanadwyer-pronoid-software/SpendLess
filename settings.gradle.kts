@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google {
             content {
@@ -24,4 +25,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "SpendLessSample"
 include(":app")
+include(":tooling:prism-rules")
+include(":tooling:konsist")
  

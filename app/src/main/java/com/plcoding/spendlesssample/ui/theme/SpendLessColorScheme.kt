@@ -8,46 +8,47 @@ import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
-internal val SpendLessLightColorScheme = lightColorScheme(
-    primary = Primary,
-    onPrimary = OnPrimary,
-    primaryContainer = PrimaryContainer,
-    onPrimaryContainer = OnPrimaryContainer,
-    inversePrimary = InversePrimary,
-    secondary = Secondary,
-    onSecondary = OnSecondary,
-    secondaryContainer = SecondaryContainer,
-    onSecondaryContainer = OnSecondaryContainer,
-    tertiaryContainer = TertiaryContainer,
-    onTertiaryContainer = OnTertiaryContainer,
-    error = Error,
-    onError = OnError,
-    background = Background,
-    onBackground = OnBackground,
-    surface = Surface,
-    onSurface = OnSurface,
-    onSurfaceVariant = OnSurfaceVariant,
-    outline = Outline,
-    surfaceContainerLowest = SurfaceContainerLowest,
-    surfaceContainerLow = SurfaceContainerLow,
-    surfaceContainer = SurfaceContainer,
-    surfaceContainerHighest = SurfaceContainerHighest,
-    inverseSurface = InverseSurface,
-    inverseOnSurface = InverseOnSurface,
-)
+internal val SpendLessLightColorScheme =
+    lightColorScheme(
+        primary = Primary,
+        onPrimary = OnPrimary,
+        primaryContainer = PrimaryContainer,
+        onPrimaryContainer = OnPrimaryContainer,
+        inversePrimary = InversePrimary,
+        secondary = Secondary,
+        onSecondary = OnSecondary,
+        secondaryContainer = SecondaryContainer,
+        onSecondaryContainer = OnSecondaryContainer,
+        tertiaryContainer = TertiaryContainer,
+        onTertiaryContainer = OnTertiaryContainer,
+        error = Error,
+        onError = OnError,
+        background = Background,
+        onBackground = OnBackground,
+        surface = Surface,
+        onSurface = OnSurface,
+        onSurfaceVariant = OnSurfaceVariant,
+        outline = Outline,
+        surfaceContainerLowest = SurfaceContainerLowest,
+        surfaceContainerLow = SurfaceContainerLow,
+        surfaceContainer = SurfaceContainer,
+        surfaceContainerHighest = SurfaceContainerHighest,
+        inverseSurface = InverseSurface,
+        inverseOnSurface = InverseOnSurface,
+    )
 
 @Immutable
-data class SpendLessExtraColors(
-    val success: Color,
-)
+data class SpendLessExtraColors(val success: Color)
 
-internal val SpendLessLightExtraColors = SpendLessExtraColors(
-    success = Success,
-)
+internal val SpendLessLightExtraColors =
+    SpendLessExtraColors(
+        success = Success,
+    )
 
-internal val LocalSpendLessExtraColors = staticCompositionLocalOf<SpendLessExtraColors> {
-    error("SpendLessExtraColors not provided. Wrap your UI in SpendLessSampleTheme.")
-}
+internal val LocalSpendLessExtraColors =
+    staticCompositionLocalOf<SpendLessExtraColors> {
+        error("SpendLessExtraColors not provided. Wrap your UI in SpendLessSampleTheme.")
+    }
 
 val MaterialTheme.spendLessColors: SpendLessExtraColors
     @Composable
